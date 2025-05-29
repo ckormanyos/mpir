@@ -12,6 +12,11 @@ a fork of [winlibs/mpir](https://github.com/winlibs/mpir).
 
 There are assembly files in this project and they are assembled
 to object code using the [YASM assembler](https://github.com/yasm/yasm).
+  - Get the YASM assembler.
+  - Copy `yasm.exe` to `C:\Program Files\YASMyasm.exe`.
+  - Enable the YASM customization as described below.
+
+## YASM _vsprops_
 
 In order to build this project, the so-called _vsprops_ for YASM
 are needed. These props basically tell VS how to handle the assembly
@@ -20,10 +25,15 @@ Note that your assembly files need to have the extension `.asm`.
 The props from the [ShiftMediaProject/VSYASM](https://github.com/ShiftMediaProject/VSYASM)
 project have been successfully used in combination with VS2022.
 
-After installing the props, you must still enable the YASM customization.
-Right-click on the project in the Solution Explorer and select `Build Customizations...`.
-This will give you a dialog box that allows you to select YASM as the default assembler
-for `.asm` assembly files.
+For the `core2` builds, the YASM props located in the `build-vc` directory
+are already preselected.
+
+## Enable the YASM Customization
+
+To enable the YASM customization,
+  - Right-click on the project in the Solution Explorer.
+  - Select `Build Customizations...`.
+  - This will give you a dialog box that allows you to select YASM as the default assembler for `.asm` assembly files.
 
 ---
 **LEGACY**
