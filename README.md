@@ -1,8 +1,11 @@
 ckormanyos/mpir
 ==================
 
-`ckormanyos/mpir` preserves a _legacy_ library. It appears as though the original
-[mpir](https://github.com/wbhart/mpir)
+`ckormanyos/mpir` preserves the _legacy_
+[MPIR Library](https://en.wikipedia.org/wiki/MPIR_(mathematics_software))
+from William Bart and the MPIR Team.
+
+It appears as though the original [mpir source code](https://github.com/wbhart/mpir)
 has for the most part fallen out of support. `ckormanyos/mpir` preserves
 the MSVC build of mpir on MSVC 2022 (and beyond). `ckormanyos/mpir` is, itself,
 a fork of [winlibs/mpir](https://github.com/winlibs/mpir).
