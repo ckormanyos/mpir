@@ -15,7 +15,7 @@ to object code using the [YASM assembler](https://github.com/yasm/yasm).
 
 In order to build this project, the so-called _vsprops_ for YASM
 are needed. These props basically tell VS how to handle the assembler
-files with YASM and define the command lines needed for assembly to object code.
+files with YASM and define the appropriate command lines needed.
 Note that your assembly files need to have the extension `.asm`.
 The props from the [ShiftMediaProject/VSYASM](https://github.com/ShiftMediaProject/VSYASM)
 project have been successfully used in combination with VS2022.
