@@ -4,22 +4,22 @@ ckormanyos/mpir
 `ckormanyos/mpir` preserves a _legacy_ library. It appears as though the original
 [mpir](https://github.com/wbhart/mpir)
 has for the most part fallen out of support. `ckormanyos/mpir` preserves
-the MSVC build of mpir on MSVC 2022 (and beyond). `ckormanyos/mpir` is, itself,
+the MSVC build of mpir on VS2022 (and beyond). `ckormanyos/mpir` is, itself,
 a fork of [winlibs/mpir](https://github.com/winlibs/mpir).
 
 There are assembly files in this project and they are assembled
-to object code using the [yasm assembler](https://github.com/yasm/yasm).
+to object code using the [YASM assembler](https://github.com/yasm/yasm).
 
-In order to build this project, the so-called _vsprops_ for yasm
+In order to build this project, the so-called _vsprops_ for YASM
 are needed. These props basically tell VS how to handle the assembler
-files (having extension .asm) with yasm. The props from
-[ShiftMediaProject/VSYASM](https://github.com/ShiftMediaProject/VSYASM).
+files with YASM. Note that your assembly files
+need to have the extension `.asm`. The props from the
+[ShiftMediaProject/VSYASM](https://github.com/ShiftMediaProject/VSYASM)
+project have been successfully used in combination with VS2022.
 
-After installing the props, you must still enable the customization
-by right clicking on the project in the Solution Explorer
-and select 'Build Customisations..'.
-This will give you a dialog box that allows you to select YASM as an assembler
-(note that your assembly files need to have the extension '.asm').
+After installing the props, you must still enable the yasm customization.
+Right clicking on the project in the Solution Explorer and select 'Build Customisations..'.
+This will give you a dialog box that allows you to select YASM as an assembler.
 
 ---
 **LEGACY**
