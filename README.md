@@ -14,14 +14,14 @@ There are assembly files in this project and they are assembled
 to object code using the [YASM assembler](https://github.com/yasm/yasm).
 
 In order to build this project, the so-called _vsprops_ for YASM
-are needed. These props basically tell VS how to handle the assembler
+are needed. These props basically tell VS how to handle the assembly
 files with YASM and define the appropriate command lines needed.
 Note that your assembly files need to have the extension `.asm`.
 The props from the [ShiftMediaProject/VSYASM](https://github.com/ShiftMediaProject/VSYASM)
 project have been successfully used in combination with VS2022.
 
 After installing the props, you must still enable the YASM customization.
-Right clicking on the project in the Solution Explorer and select `Build Customizations...`.
+Right-click on the project in the Solution Explorer and select `Build Customizations...`.
 This will give you a dialog box that allows you to select YASM as the default assembler
 for `.asm` assembly files.
 
