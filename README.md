@@ -12,9 +12,9 @@ a fork of [winlibs/mpir](https://github.com/winlibs/mpir).
 
 There are assembly files in this project and they are assembled
 to object code using the [YASM assembler](https://github.com/yasm/yasm).
-  - Get the YASM assembler.
-  - Copy `yasm.exe` to `C:\Program Files\YASM\yasm.exe`.
-  - Enable the YASM customization as described below.
+  - The `core2` builds have been modified to use a [local copy of YASM](./build.vc/yasm/1.3.0).
+  - The YASM customization has been set to use the _vsprops_ for YASM that are located in the [build.vc](./build.vc) directory.
+  - For other buld configurations, you'll still need to enable the YASM customization as described below.
 
 ## YASM _vsprops_
 
@@ -24,9 +24,6 @@ files with YASM and define the appropriate command lines needed.
 Note that your assembly files need to have the extension `.asm`.
 The props from the [ShiftMediaProject/VSYASM](https://github.com/ShiftMediaProject/VSYASM)
 project have been successfully used in combination with VS2022.
-
-For the `core2` builds, the YASM props located in the
-[`build-vc`](./build-vc) directory have already been preselected.
 
 ## Enable the YASM Customization
 
@@ -39,6 +36,7 @@ To enable the YASM customization,
 **LEGACY**
 
 Original docs from [winlibs/mpir](https://github.com/winlibs/mpir) follow.
+Some of the links in the original docs, however, seem to be broken at the moment.
 
 ---
 
