@@ -25,8 +25,8 @@ Note that your assembly files need to have the extension `.asm`.
 The props from the [ShiftMediaProject/VSYASM](https://github.com/ShiftMediaProject/VSYASM)
 project have been successfully used in combination with VS2022.
 
-For the `core2` builds, the YASM props located in the `build-vc` directory
-are already preselected.
+For the `core2` builds, the YASM props located in the
+[`build-vc`](./build-vc) directory have already been preselected.
 
 ## Enable the YASM Customization
 
