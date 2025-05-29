@@ -3,16 +3,7 @@
   "WorkspaceRootPath": "C:\\ChrisGitRepos\\mpir_from_winlibs\\build.vc17\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\ChrisGitRepos\\mpir_from_winlibs\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\ChrisGitRepos\\mpir_from_winlibs\\README||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ChrisGitRepos\\mp_cpp\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DD6B75-0009-40DC-BE9E-383C565494C8}|lib_mpir_core2\\lib_mpir_core2.vcxproj|C:\\ChrisGitRepos\\mpir_from_winlibs\\mpir.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ChrisGitRepos\\mpir_from_winlibs\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,53 +18,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\ChrisGitRepos\\mpir_from_winlibs\\README.md",
-              "RelativeDocumentMoniker": "..\\README.md",
-              "ToolTip": "C:\\ChrisGitRepos\\mpir_from_winlibs\\README.md",
-              "RelativeToolTip": "..\\README.md",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-05-29T11:39:14.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "README",
-              "DocumentMoniker": "C:\\ChrisGitRepos\\mpir_from_winlibs\\README",
-              "RelativeDocumentMoniker": "..\\README",
-              "ToolTip": "C:\\ChrisGitRepos\\mpir_from_winlibs\\README",
-              "RelativeToolTip": "..\\README",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\ChrisGitRepos\\mpir_from_winlibs\\.gitignore",
+              "RelativeDocumentMoniker": "..\\.gitignore",
+              "ToolTip": "C:\\ChrisGitRepos\\mpir_from_winlibs\\.gitignore",
+              "RelativeToolTip": "..\\.gitignore",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvxAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-29T11:39:11.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\ChrisGitRepos\\mp_cpp\\README.md",
-              "RelativeDocumentMoniker": "..\\..\\mp_cpp\\README.md",
-              "ToolTip": "C:\\ChrisGitRepos\\mp_cpp\\README.md",
-              "RelativeToolTip": "..\\..\\mp_cpp\\README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-05-29T11:38:08.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "mpir.h",
-              "DocumentMoniker": "C:\\ChrisGitRepos\\mpir_from_winlibs\\mpir.h",
-              "RelativeDocumentMoniker": "..\\mpir.h",
-              "ToolTip": "C:\\ChrisGitRepos\\mpir_from_winlibs\\mpir.h",
-              "RelativeToolTip": "..\\mpir.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-29T11:22:34.726Z",
+              "WhenOpened": "2025-05-29T12:31:47.215Z",
               "EditorCaption": ""
             }
           ]
