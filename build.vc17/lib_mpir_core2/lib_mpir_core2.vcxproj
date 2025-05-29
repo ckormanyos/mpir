@@ -29,7 +29,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
-    <Import Project="..\..\build.vc\vsyasm.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\yasm.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
@@ -48,8 +48,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
       <Command>cd ..\..\build.vc
-prebuild core2 x64 15
-      </Command>
+prebuild core2 x64 17</Command>
     </PreBuildEvent>
     <YASM>
       <Defines>
@@ -64,15 +63,13 @@ prebuild core2 x64 15
     </ClCompile>
     <PostBuildEvent>
       <Command>cd ..\..\build.vc
-postbuild "$(TargetPath)" 15
-      </Command>
+postbuild "$(TargetPath)" 17</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
       <Command>cd ..\..\build.vc
-prebuild core2 x64 15
-      </Command>
+prebuild core2 x64 17</Command>
     </PreBuildEvent>
     <YASM>
       <Defines>
@@ -87,8 +84,7 @@ prebuild core2 x64 15
     </ClCompile>
     <PostBuildEvent>
       <Command>cd ..\..\build.vc
-postbuild "$(TargetPath)" 15
-      </Command>
+postbuild "$(TargetPath)" 17</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ImportGroup>
@@ -636,7 +632,7 @@ postbuild "$(TargetPath)" 15
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\..\build.vc\vsyasm.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\yasm.targets" />
   </ImportGroup>
   <ItemGroup>
     <None Include="..\..\gmp-h.in" />

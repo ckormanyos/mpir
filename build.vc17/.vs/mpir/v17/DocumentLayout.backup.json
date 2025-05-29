@@ -1,12 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\git\\winlibs\\mpir\\build.vc17\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\ChrisGitRepos\\mpir_from_winlibs\\build.vc17\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49DD6B75-0009-40DC-BE9E-383C565494C8}|lib_mpir_core2\\lib_mpir_core2.vcxproj|C:\\ChrisGitRepos\\mpir_from_winlibs\\mpir.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mpir.h",
+              "DocumentMoniker": "C:\\ChrisGitRepos\\mpir_from_winlibs\\mpir.h",
+              "RelativeDocumentMoniker": "..\\mpir.h",
+              "ToolTip": "C:\\ChrisGitRepos\\mpir_from_winlibs\\mpir.h",
+              "RelativeToolTip": "..\\mpir.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-29T11:22:34.726Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
