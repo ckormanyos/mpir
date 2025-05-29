@@ -13,7 +13,7 @@ a fork of [winlibs/mpir](https://github.com/winlibs/mpir).
 There are assembly files in this project and they are assembled
 to object code using the [YASM assembler](https://github.com/yasm/yasm).
   - Get the YASM assembler.
-  - Copy `yasm.exe` to `C:\Program Files\YASMyasm.exe`.
+  - Copy `yasm.exe` to `C:\Program Files\YASM\yasm.exe`.
   - Enable the YASM customization as described below.
 
 ## YASM _vsprops_
