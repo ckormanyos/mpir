@@ -39,7 +39,7 @@ jobs:
         working-directory: ./
         run: |
           cd build.vc17
-          dir
+          ..\build.vc\yasm\1.3.0\yasm.exe --version
           set INCLUDE=${{ runner.workspace }}\boost-root
           set INCLUDE=${{ runner.workspace }}\lib\x64\Release;%INCLUDE%
           MSBuild -m mpir.sln -p:useenv=true -p:Configuration=Release -p:Platform=x64 /t:Rebuild
