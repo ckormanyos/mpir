@@ -23,6 +23,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_with_boost", "..\test_
 		{49DD6B75-0009-40DC-BE9E-383C565494C8} = {49DD6B75-0009-40DC-BE9E-383C565494C8}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{64864D5D-EC33-49C0-9D6C-C7E91F061334}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{22125473-17F6-4DAA-BDA3-ED84346084E9}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\mpir.yml = ..\.github\workflows\mpir.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -42,10 +49,15 @@ Global
 		{D35A0A8E-F81A-4F97-828E-8CAB4B9DBFFC}.Debug|x64.ActiveCfg = Debug|x64
 		{D35A0A8E-F81A-4F97-828E-8CAB4B9DBFFC}.Release|x64.ActiveCfg = Release|x64
 		{6A1B81E4-ADF0-4F06-BE8E-D7D8A98D54A7}.Debug|x64.ActiveCfg = Debug|x64
+		{6A1B81E4-ADF0-4F06-BE8E-D7D8A98D54A7}.Debug|x64.Build.0 = Debug|x64
 		{6A1B81E4-ADF0-4F06-BE8E-D7D8A98D54A7}.Release|x64.ActiveCfg = Release|x64
+		{6A1B81E4-ADF0-4F06-BE8E-D7D8A98D54A7}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22125473-17F6-4DAA-BDA3-ED84346084E9} = {64864D5D-EC33-49C0-9D6C-C7E91F061334}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2012533E-BEA4-4DF1-9BA7-E281C863AE81}

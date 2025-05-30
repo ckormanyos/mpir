@@ -3,7 +3,12 @@ ckormanyos/mpir
 
 `ckormanyos/mpir` preserves the _legacy_
 [MPIR Library](https://en.wikipedia.org/wiki/MPIR_(mathematics_software))
-from William Bart and the MPIR Team.
+from William Bart and the MPIR Team. The projects `x86_64w/core2`
+and `gc` (the generic project) and also the C++ wrapper `cxx`
+have been included as solution build configurations. Both the `lib`
+as well as the `dll` configurations are available for all of these.
+An optional test program using the wrapped `gmp_float` type
+from `Boost.Multiprecision` is also included for optional use.
 
 It appears as though the original [MPIR source code](https://github.com/wbhart/mpir)
 has for the most part fallen out of support. `ckormanyos/mpir` preserves
@@ -14,7 +19,7 @@ There are assembly files in this project and they are assembled
 to object code using the [YASM assembler](https://github.com/yasm/yasm).
   - The `core2` builds have been modified to use a [local copy of YASM](./build.vc/yasm/1.3.0).
   - The YASM customization has been set to use the _vsprops_ for YASM that are located in the [build.vc](./build.vc) directory.
-  - For other buld configurations, you'll still need to enable the YASM customization as described below.
+  - For other build configurations (if these are activated), you'll still need to enable the YASM customization as described below.
 
 ## YASM _vsprops_
 

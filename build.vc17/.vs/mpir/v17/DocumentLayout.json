@@ -1,12 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\ChrisGitRepos\\mpir_from_winlibs\\build.vc17\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22125473-17F6-4DAA-BDA3-ED84346084E9}|NewFolder1{22125473-17F6-4DAA-BDA3-ED84346084E9}|C:\\ChrisGitRepos\\mpir_from_winlibs\\.github\\workflows\\mpir.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|_doc{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\ChrisGitRepos\\mpir_from_winlibs\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mpir.yml",
+              "DocumentMoniker": "C:\\ChrisGitRepos\\mpir_from_winlibs\\.github\\workflows\\mpir.yml",
+              "RelativeDocumentMoniker": "..\\.github\\workflows\\mpir.yml",
+              "ToolTip": "C:\\ChrisGitRepos\\mpir_from_winlibs\\.github\\workflows\\mpir.yml",
+              "RelativeToolTip": "..\\.github\\workflows\\mpir.yml",
+              "ViewState": "AgIAACYAAAAAAAAAAAA2wC0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-05-30T13:10:23.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\ChrisGitRepos\\mpir_from_winlibs\\README.md",
+              "RelativeDocumentMoniker": "..\\README.md",
+              "ToolTip": "C:\\ChrisGitRepos\\mpir_from_winlibs\\README.md",
+              "RelativeToolTip": "..\\README.md",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA6wBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-05-30T13:00:54.226Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
