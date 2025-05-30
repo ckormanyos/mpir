@@ -34,8 +34,8 @@ project have been successfully used in combination with VS2022.
 
 To enable the YASM customization,
   - Right-click on the project in the Solution Explorer.
-  - Select `Build Customizations...`.
-  - This will give you a dialog box that allows you to select YASM as the default assembler for `.asm` assembly files.
+  - Select `Build Dependenciess...` and `Build Customizations...` to get to a dialog box that allows you to select YASM as the default assembler for `.asm` assembly files.
+  - Check the appropriate box for the props or navigate to it and then select it.
 
 ---
 **LEGACY**

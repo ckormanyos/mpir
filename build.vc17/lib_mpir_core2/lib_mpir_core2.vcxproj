@@ -577,7 +577,10 @@ postbuild "$(TargetPath)" 17</Command>
     <Import Project="..\..\build.vc\yasm.targets" />
   </ImportGroup>
   <ItemGroup>
-    <None Include="..\..\gmp-h.in" />
+    <None Include="..\..\gmp-h.in">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
     <None Include="..\..\mpn\x86_64w\yasm_mac.inc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>

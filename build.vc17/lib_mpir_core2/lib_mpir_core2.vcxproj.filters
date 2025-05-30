@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Header Files" />
     <Filter Include="Source Files" />
     <Filter Include="Source Files\fft" />
     <Filter Include="Source Files\mpf" />
@@ -24,21 +23,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gmp-impl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\longlong.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\mpir.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gmp-mparam.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\mpn\x86_64w\gmp-mparam.h">
       <Filter>Source Files\mpn\x86_64w</Filter>
     </ClInclude>
@@ -50,6 +34,21 @@
     </ClInclude>
     <ClInclude Include="..\..\mpn\x86_64w\core2\penryn\gmp-mparam.h">
       <Filter>Source Files\mpn\x86_64w\core2\penryn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gmp-impl.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gmp-mparam.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\longlong.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mpir.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1462,9 +1461,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\gmp-h.in" />
     <None Include="..\..\mpn\x86_64w\yasm_mac.inc">
       <Filter>Source Files\mpn\x86_64w</Filter>
+    </None>
+    <None Include="..\..\gmp-h.in">
+      <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
