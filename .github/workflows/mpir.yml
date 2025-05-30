@@ -38,11 +38,10 @@ jobs:
         shell: cmd
         working-directory: ./
         run: |
-          cd build.vc
-          del /Q yasm.exe
-          curl -o yasm.exe https://github.com/yasm/yasm/releases/download/v1.3.0/yasm-1.3.0-win64.exe
-          copy yasm-1.3.0-win64.exe yasm.exe
-          cd ..\build.vc17
+          cd build.vc\yasm\1.3.0
+          del /Q .\yasm.exe
+          curl -L -o yasm.exe https://github.com/yasm/yasm/releases/download/v1.3.0/yasm-1.3.0-win64.exe
+          cd ..\..\..\build.vc17
           echo "Query YASM version"
           ..\build.vc\yasm\1.3.0\yasm.exe --version
           set INCLUDE=${{ runner.workspace }}\boost-root
