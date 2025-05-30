@@ -44,14 +44,14 @@ jobs:
           dir yasm.exe
       - name: msvc-lib_mpir_core2-x64
         shell: cmd
-        working-directory: ${{ runner.workspace }}/mpir
+        working-directory: ./
         run: |
           cd build.vc17
           echo "Query YASM version"
-          build.vc\yasm\1.3.0\yasm.exe --version
+          ..\build.vc\yasm\1.3.0\yasm.exe --version
           set INCLUDE=${{ runner.workspace }}\boost-root
-          set INCLUDE=${{ runner.workspace }}\mpir\lib\x64\Release;%INCLUDE%
-          set INCLUDE=${{ runner.workspace }}\mpir\mpn\x86_64w;%INCLUDE%
+          set INCLUDE=.\lib\x64\Release;%INCLUDE%
+          set INCLUDE=.\mpn\x86_64w;%INCLUDE%
           MSBuild -m mpir.sln -p:useenv=true -p:Configuration=Release -p:Platform=x64 /t:Rebuild
           dir ${{ runner.workspace }}\lib\x64\Release
           dir %cd%\_Out\test_with_boost.exe
