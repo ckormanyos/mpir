@@ -21,7 +21,8 @@ The state of MPIR 3.0 is locked into `ckormanyos/mpir`.
 
 There are assembly files in this project. They are assembled
 to object code using the [YASM assembler](https://github.com/yasm/yasm).
-  - The `core2` builds have been modified to use a [local copy of YASM](./build.vc/yasm/1.3.0).
+  - The project is entirely standalone and has no dependencies. A local copy of YASM and its _vsprops_ have been localized in the repo.
+  - In particular, the `core2` builds have been modified to use a [local copy of YASM](./build.vc/yasm/1.3.0).
   - The YASM customization has been set to use the _vsprops_ for YASM that are located in the [build.vc](./build.vc) directory.
   - For other build configurations (if these are activated), you'll still need to enable the YASM customization as described below.
 
