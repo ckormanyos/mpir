@@ -42,10 +42,10 @@ To enable the YASM customization,
 
 ## Continuous Integration
 
-Continuous Integration (CI) rund on `windows-latest` using the
+Continuous Integration (CI) runs on `windows-latest` using the
 generic configuration `lib_mpir_gc`. The test program using
 the wrapped `gmp_float` type from `Boost.Multiprecision`
-is built and executed in the pipeline.
+is built and executed and its results are verified in CI the pipeline.
 
 ## Legacy and Origins
 
