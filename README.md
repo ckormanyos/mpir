@@ -13,7 +13,8 @@ from `Boost.Multiprecision` is also included for optional use.
 It appears as though the original [MPIR source code](https://github.com/wbhart/mpir)
 has for the most part fallen out of support. `ckormanyos/mpir` preserves
 the build of MPIR on VS2022 (and beyond). `ckormanyos/mpir` is, itself,
-a fork of [winlibs/mpir](https://github.com/winlibs/mpir).
+was initially creadet as a fork of [winlibs/mpir](https://github.com/winlibs/mpir).
+`ckormanyos/mpir` is now separated as a standalone repo.
 
 There are assembly files in this project and they are assembled
 to object code using the [YASM assembler](https://github.com/yasm/yasm).

@@ -42,8 +42,8 @@ jobs:
           cd build.vc17
           echo "Set environment"
           echo.
-          set INCLUDE=${{ runner.workspace }}\boost-root
-          set INCLUDE=%CD%\lib_mpir_gc\x64\Release;%INCLUDE%
+          set INCLUDE=%cd%\..
+          set INCLUDE=${{ runner.workspace }}\boost-root;%INCLUDE%
           echo "Run MSBuild"
           echo.
           MSBuild -m mpir.sln -p:useenv=true -p:Configuration=Release -p:Platform=x64 /t:Rebuild

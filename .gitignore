@@ -4,11 +4,6 @@ build.vc/output_params.bat
 build.vc15/test-config.props
 build.vc17/test-config.props
 lib/x64/
-config.h
-gmp.h
-gmp-mparam.h
-longlong.h
-mpir.h
 build.vc17/dll_mpir_core2/x64/
 build.vc17/dll_mpir_core2/dll_mpir_core2.vcxproj.user
 build.vc17/lib_mpir_core2/lib_mpir_core2.vcxproj.user
