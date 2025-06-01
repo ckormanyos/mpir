@@ -1,0 +1,56 @@
+# ------------------------------------------------------------------------------
+#  Copyright Christopher Kormanyos 2025.
+#  Distributed under the Boost Software License,
+#  Version 1.0. (See accompanying file LICENSE_1_0.txt
+#  or copy at http://www.boost.org/LICENSE_1_0.txt)
+# ------------------------------------------------------------------------------
+
+name: mpir
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+jobs:
+  msvc-lib_mpir_gc-x64:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: clone-boost-develop
+        working-directory: ${{ runner.workspace }}
+        run: |
+          git clone -b develop --depth 1 https://github.com/boostorg/boost.git ${{ runner.workspace }}/boost-root
+      - name: clone-boost-submods
+        working-directory: ${{ runner.workspace }}/boost-root
+        run: |
+          git submodule update --init tools
+          git submodule update --init libs/config
+          git submodule update --init libs/math
+          git submodule update --init libs/multiprecision
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          toolset: 14.4
+      - name: bootstrap-boost
+        working-directory: ${{ runner.workspace }}/boost-root
+        run: |
+          ./bootstrap.bat
+          ./b2 headers
+      - name: msvc-lib_mpir_gc-x64
+        shell: cmd
+        working-directory: ./
+        run: |
+          cd build.vc17
+          echo "Set environment"
+          echo.
+          set INCLUDE=${{ runner.workspace }}\boost-root
+          set INCLUDE=%CD%\lib_mpir_gc\x64\Release;%INCLUDE%
+          echo "Run MSBuild"
+          echo.
+          MSBuild -m mpir.sln -p:useenv=true -p:Configuration=Release -p:Platform=x64 /t:Rebuild
+          echo "Verify build artifacts"
+          echo.
+          dir %CD%\lib_mpir_gc\x64\Release\mpir_a.lib
+          dir %CD%\_Out\test_with_boost.exe
+          echo "Execute test program"
+          echo.
+          %CD%\_Out\test_with_boost.exe
