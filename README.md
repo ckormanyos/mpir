@@ -12,13 +12,17 @@ from `Boost.Multiprecision` is also included for optional use.
 
 It appears as though the original [MPIR source code](https://github.com/wbhart/mpir)
 has for the most part fallen out of support. `ckormanyos/mpir` preserves
-the build of MPIR on VS2022 (and beyond). `ckormanyos/mpir` is, itself,
-was initially creadet as a fork of [winlibs/mpir](https://github.com/winlibs/mpir).
-`ckormanyos/mpir` is now separated as a standalone repo.
+the build of MPIR on VS2022 (and beyond).
 
-There are assembly files in this project and they are assembled
+`ckormanyos/mpir` has, itself, initially been creaded as a fork of
+[winlibs/mpir](https://github.com/winlibs/mpir).
+`ckormanyos/mpir` is now separated into its own standalone repo lacking legacy history.
+The state of MPIR 3.0 is locked into `ckormanyos/mpir`.
+
+There are assembly files in this project. They are assembled
 to object code using the [YASM assembler](https://github.com/yasm/yasm).
-  - The `core2` builds have been modified to use a [local copy of YASM](./build.vc/yasm/1.3.0).
+  - The project is entirely standalone and has no dependencies. A local copy of YASM and its _vsprops_ have been localized in the repo.
+  - In particular, the `core2` builds have been modified to use a [local copy of YASM](./build.vc/yasm/1.3.0).
   - The YASM customization has been set to use the _vsprops_ for YASM that are located in the [build.vc](./build.vc) directory.
   - For other build configurations (if these are activated), you'll still need to enable the YASM customization as described below.
 
@@ -44,8 +48,9 @@ To enable the YASM customization,
 
 Continuous Integration (CI) runs on `windows-latest` using the
 generic configuration `lib_mpir_gc`. The test program using
-the wrapped `gmp_float` type from `Boost.Multiprecision`
-is built and executed and its results are verified in CI the pipeline.
+the wrapped `gmp_float` type from `Boost.Multiprecision` runs in the
+CI pipeline. The program is built and executed and its results are verified
+in the CI pipeline.
 
 ## Legacy and Origins
 
@@ -56,6 +61,5 @@ the GNU Multiple Precision Arithmetic Library.
 
 Original docs from [wbhart/mpir](https://github.com/wbhart/mpir) and
 [winlibs/mpir](https://github.com/winlibs/mpir) can be found at
-their repository homes.
-Some of the links in the some of these original docs,
+their repository homes. Some of the links in the these original docs,
 however, seem to be broken at the moment.
