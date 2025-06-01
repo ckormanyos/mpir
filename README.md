@@ -12,12 +12,14 @@ from `Boost.Multiprecision` is also included for optional use.
 
 It appears as though the original [MPIR source code](https://github.com/wbhart/mpir)
 has for the most part fallen out of support. `ckormanyos/mpir` preserves
-the build of MPIR on VS2022 (and beyond). `ckormanyos/mpir` has, itself,
-initially been creaded as a fork of [winlibs/mpir](https://github.com/winlibs/mpir).
-`ckormanyos/mpir` is now separated into its own standalone repo without history.
+the build of MPIR on VS2022 (and beyond).
+
+`ckormanyos/mpir` has, itself, initially been creaded as a fork of
+[winlibs/mpir](https://github.com/winlibs/mpir).
+`ckormanyos/mpir` is now separated into its own standalone repo lacking legacy history.
 The state of MPIR 3.0 is locked into `ckormanyos/mpir`.
 
-There are assembly files in this project and they are assembled
+There are assembly files in this project. They are assembled
 to object code using the [YASM assembler](https://github.com/yasm/yasm).
   - The `core2` builds have been modified to use a [local copy of YASM](./build.vc/yasm/1.3.0).
   - The YASM customization has been set to use the _vsprops_ for YASM that are located in the [build.vc](./build.vc) directory.
@@ -57,6 +59,5 @@ the GNU Multiple Precision Arithmetic Library.
 
 Original docs from [wbhart/mpir](https://github.com/wbhart/mpir) and
 [winlibs/mpir](https://github.com/winlibs/mpir) can be found at
-their repository homes.
-Some of the links in the some of these original docs,
+their repository homes. Some of the links in the these original docs,
 however, seem to be broken at the moment.
