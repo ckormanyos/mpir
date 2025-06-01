@@ -14,7 +14,7 @@ It appears as though the original [MPIR source code](https://github.com/wbhart/m
 has for the most part fallen out of support. `ckormanyos/mpir` preserves
 the build of MPIR on VS2022 (and beyond).
 
-`ckormanyos/mpir` has, itself, initially been creaded as a fork of
+`ckormanyos/mpir` has, itself, initially been created as a fork of
 [winlibs/mpir](https://github.com/winlibs/mpir).
 `ckormanyos/mpir` is now separated into its own standalone repo lacking legacy history.
 The state of MPIR 3.0 is locked into `ckormanyos/mpir`.
