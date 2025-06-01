@@ -42,45 +42,20 @@ To enable the YASM customization,
 
 ## Continuous Integration
 
-Continuous Integration (CI) rund on `windows-latest` using the
+Continuous Integration (CI) runs on `windows-latest` using the
 generic configuration `lib_mpir_gc`. The test program using
 the wrapped `gmp_float` type from `Boost.Multiprecision`
-is built and executed in the pipeline.
+is built and executed and its results are verified in CI the pipeline.
 
----
-**LEGACY**
+## Legacy and Origins
 
-Original docs from [winlibs/mpir](https://github.com/winlibs/mpir) follow.
-Some of the links in the original docs, however, seem to be broken at the moment.
+The [MPIR Library](https://en.wikipedia.org/wiki/MPIR_(mathematics_software))
+itself is forked from the original
+[GMP project](https://en.wikipedia.org/wiki/GNU_Multiple_Precision_Arithmetic_Library),
+the GNU Multiple Precision Arithmetic Library.
 
----
-
-# MPIR
-
-MPIR is built using VC9/VC11 projects files. No patch are necessary but to rename
-the library to mpir__a.lib. Follow the instructions in the readme.txt in the
-MPIR sources and build “lib_mpir_p4” to get the static library we use for PHP.
-
-To build an ASM optimized version, you will have to install
-[Yasm](http://www.tortall.net/projects/yasm/) assembler. Complete instructions
-are available
-[here](http://www.tortall.net/projects/yasm/wiki/VisualStudio2005).
-
-### Building for PHP
-
-PHP 5.4 and below requires the VC9 build of the MPIR library.<br>
-PHP 5.5 and above requires the VC11 build of the MPIR library.
-
-* cd win/
-* 32 bit
- * configure --cpu=x86
-* 64 bit
- * configure --cpu=x86_64
-* building
- * make
- * OR
- * make.vc11
-
-### NOTE
-
-If you plan to run PHP on a specific platform, the MPIR library can use the optimized assembler files. For more information on supported platforms see mpn\README. 
+Original docs from [wbhart/mpir](https://github.com/wbhart/mpir) and
+[winlibs/mpir](https://github.com/winlibs/mpir) can be found at
+their repository homes.
+Some of the links in the some of these original docs,
+however, seem to be broken at the moment.
